@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap");
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.3;
+    font-family: "Montserrat", sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 100px;
+}
+
+p {
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin: 20px 0px;
+    letter-spacing: 1.5px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Recipe Styling */
+
+.container {
+    padding: 10px 20px;
+}
+
+.recipe--name {
+    font-size: 1.5rem;
+}
+
+.dots {
+    max-width: 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.recipe--about {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.recipe--image {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* * Recipe Ingredients */
+
+.recipe--ingredients {
+    display: block;
+    padding: 0 10px;
+}
+
+.yields {
+    display: flex;
+    align-items: center;
+}
+
+.serving--icon {
+    font-size: 20px;
+    color: orange;
+    display: inline-block;
+    padding: 5px;
+}
+
+.servings {
+    font-size: 0.6rem;
+    padding: 0 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.servings p {
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.serves {
+    text-transform: lowercase !important;
+}
+
+.timings {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.prepare,
+.cook,
+.total {
+    display: flex;
+    align-items: center;
+}
+
+.time--icon {
+    font-size: 20px;
+}
+
+.time--container p {
+    font-size: 0.6rem;
+    padding: 0 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 2px 0;
+}
+
+.p--time,
+.c--time,
+.t--time {
+    text-transform: lowercase !important;
+}
+
+/* * Ingredients container */
+.ingredients--header {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.crust--ingredients .recipe--name {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.ingredients--list {
+    padding: 5px;
+}
+
+.ingredient {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    text-align: start;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.cheesecake--ingredients .recipe--name {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* * Instructions section */
+
+.instructions {
+    width: 100%;
+}
+
+.instructions--header {
+    margin: 5px 0;
+}
+
+.instruction {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.instruction p {
+    width: 100%;
+    flex: 2;
+    margin: 0;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.instruction--number {
+    padding: 10px 10px;
+    color: white;
+    background-color: orange;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+@media (min-width: 720px) {
+    .recipe--ingredients {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-gap: 10px;
+    }
+
+    .preparation--container {
+        grid-column-start: 2;
+        height: 40%;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .igredients--container {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .timings {
+        display: block;
+    }
+
+    .prepare,
+    .cook,
+    .total {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .recipe--name {
+        font-size: 3rem;
+    }
+
+    .recipe--about {
+        font-size: 1rem;
+    }
+
+    .ingredients--header {
+        font-size: 2.2rem;
+    }
+
+    .recipe--ingredients {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-gap: 10px;
+    }
+
+    .preparation--container {
+        grid-column-start: 2;
+        height: 30%;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4);
+    }
+
+    .igredients--container {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .timings {
+        display: block;
+    }
+
+    .prepare,
+    .cook,
+    .total {
+        margin: 10px 0;
+    }
+}
